@@ -9,8 +9,8 @@
   <arg name="right_electric_gripper" default="false"/>
   <arg name="left_electric_gripper" default="false"/>
   <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
-  <arg name="left_tip_name" default="left_gripper"/>
-  <arg name="right_tip_name" default="right_gripper"/>
+  <arg name="left_tip_name" default="left_wrist"/>
+  <arg name="right_tip_name" default="right_wrist"/>
   <include file="$(find baxter_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
     <arg name="left_electric_gripper" value="$(arg left_electric_gripper)"/>
